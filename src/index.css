@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #FDFBF7;
+    color: #1C1C1C;
+  }
+}
+
+/* Editorial custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F5EE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4C3A3;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8C7A5B;
+}
+
+/* Subtle newspaper / editorial rule lines */
+.editorial-border {
+  border-color: #D4C3A3;
+}
+
+.editorial-bg {
+  background-color: #FDFBF7;
+}
+
+.editorial-card {
+  background-color: #FFFFFF;
+  border: 1px solid #D4C3A3;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: #1C1C1C !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
